@@ -1,0 +1,12 @@
+Timestamp: 2024-08-28 11:36:15
+User ID: f6b60203-2ba7-45c9-a0b9-3868a1eae78d
+User Name: Aditya Singh 
+User Question: How many Payment Categorizations are present?
+SQL Query: 
+Results DataFrame:
+Empty DataFrame
+Columns: []
+Index: []
+Bot Response: I encountered an error while processing your request. Could you please rephrase your question or try again?
+--------------------------------------------------------------------------------
+

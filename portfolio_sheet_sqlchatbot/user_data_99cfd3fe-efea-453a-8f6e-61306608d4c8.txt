@@ -1,0 +1,24 @@
+Timestamp: 2024-08-28 11:15:54
+User ID: 99cfd3fe-efea-453a-8f6e-61306608d4c8
+User Name: ansh
+User Question: what is the delay in client move in vs their start dates
+SQL Query: 
+Results DataFrame:
+Empty DataFrame
+Columns: []
+Index: []
+Bot Response: I encountered an error while processing your request. Could you please rephrase your question or try again?
+--------------------------------------------------------------------------------
+
+Timestamp: 2024-08-28 11:43:03
+User ID: 99cfd3fe-efea-453a-8f6e-61306608d4c8
+User Name: ansh
+User Question: what is the ration of new  clients  turned up throygh CBRE broker and JLL broker in 2023
+SQL Query: 
+Results DataFrame:
+Empty DataFrame
+Columns: []
+Index: []
+Bot Response: I encountered an error while processing your request. Could you please rephrase your question or try again?
+--------------------------------------------------------------------------------
+

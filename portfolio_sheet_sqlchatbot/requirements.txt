@@ -1,0 +1,6 @@
+gradio==4.12.0
+groq==0.4.2
+mysql-connector-python==8.2.0
+pandas==2.1.4
+python-dotenv==1.0.1
+sqlparse==0.4.4
