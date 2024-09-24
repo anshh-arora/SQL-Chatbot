@@ -1,0 +1,45 @@
+Timestamp: 2024-09-24 00:13:38
+User ID: bf625b22-7bc5-45d8-bbfa-0a5789644516
+User Name: User
+User Question: hi sea
+SQL Query: 
+Results DataFrame:
+Empty DataFrame
+Columns: []
+Index: []
+Bot Response: Hi sir! How can I assist you today? Would you like to know something about your database or is there something else on your mind?
+--------------------------------------------------------------------------------
+
+Timestamp: 2024-09-24 00:13:50
+User ID: bf625b22-7bc5-45d8-bbfa-0a5789644516
+User Name: User
+User Question: find top selling item 
+SQL Query: SELECT `Popular_Item`, SUM(`Store_Sales`) AS Total_Sales FROM store_data_sheet GROUP BY `Popular_Item` ORDER BY Total_Sales DESC LIMIT 1;
+Results DataFrame:
+Popular_Item Total_Sales
+       Bread     5278340
+Bot Response: SQL Query:
+```sql
+SELECT `Popular_Item`,
+       SUM(`Store_Sales`) AS Total_Sales
+FROM store_data_sheet
+GROUP BY `Popular_Item`
+ORDER BY Total_Sales DESC
+LIMIT 1;
+```
+
+The top selling item is Bread, with total sales of 5278340 INR.
+--------------------------------------------------------------------------------
+
+Timestamp: 2024-09-24 18:41:48
+User ID: bf625b22-7bc5-45d8-bbfa-0a5789644516
+User Name: User
+User Question: hi my name is ansh
+SQL Query: 
+Results DataFrame:
+Empty DataFrame
+Columns: []
+Index: []
+Bot Response: Hi Ansh sir! It's nice to meet you. I'm Sia, your AI assistant. I'm here to help you with any questions you may have about your database or anything else. How can I assist you today?
+--------------------------------------------------------------------------------
+
