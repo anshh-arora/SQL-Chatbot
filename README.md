@@ -1,56 +1,79 @@
 # SQL-Chatbot
 
-## Overview
-The **SQL-Chatbot** is an innovative way to interact with your database using natural language instead of traditional SQL queries. This chatbot leverages advanced language models (LLMs) to translate your natural language queries into SQL commands, allowing seamless communication with databases without requiring any programming knowledge. It's an efficient and user-friendly approach to database interaction for users of all technical backgrounds.
+SQL-Chatbot introduces a revolutionary approach to interacting with databases by utilizing **Natural Language Processing (NLP)** to translate user queries into SQL commands. With this project, users no longer need to write SQL commands manually; instead, they can communicate with the database in plain English. This not only streamlines the database querying process but also opens up the world of data management to users with limited or no programming knowledge. SQL-Chatbot uses cutting-edge **LLaMA models** to comprehend and generate accurate SQL queries based on natural language input.
 
----
+![SQL-Chatbot Demo](Dancing%20Chatbot.gif)
+
+## Why SQL-Chatbot?
+
+SQL-Chatbot transforms the way users interact with databases by:
+
+- **Simplifying database queries**: Users can bypass learning SQL syntax and instead ask questions or request data in English.
+- **Improving accessibility**: Users of all technical levels, from beginners to advanced professionals, can benefit from SQL-Chatbot without needing to master complex SQL commands.
+- **Efficient database operations**: SQL-Chatbot handles the entire process, from understanding user queries to executing the corresponding SQL commands, making database interaction smoother and faster.
+
+## How It Works
+
+The SQL-Chatbot leverages **Large Language Models (LLMs)** to convert user input into valid SQL queries. The project is powered by the **LLaMA model**, which takes the user's natural language query and, using the instructions provided in `base_prompt.txt`, translates it into a corresponding SQL query. Once generated, the SQL query interacts with the database, retrieves the requested data, and presents it back to the user in an understandable format.
 
 ## Project Structure
 
-### **Files and Directories**
+- `.env`: Contains sensitive environment variables such as API keys.
+- `main.py`: Core script containing the Gradio application for user interaction.
+- `base_prompt.txt`: Provides foundational context to the LLaMA model.
+- `store_data.csv`: Primary dataset for the SQL-Chatbot's queries.
+- `data_to_sql.py`: Script for transferring data from CSV to SQL database.
+- `modify_data.py`: Applies data transformations before storage.
+- `previous_interactions.txt`: Logs user interactions for context maintenance.
+- `requirements.txt`: List of Python dependencies.
 
-- **`main.py`**: This file contains the Gradio application, which serves as the user interface for interacting with the SQL-Chatbot. It manages the interaction between the user, the LLM, and the SQL database.
-
-- **`base_prompt.txt`**: This text file provides the context and guidance for the LLaMA model, helping it understand how to convert natural language inputs into accurate SQL queries.
-
-- **`requirements.txt`**: A list of all required Python libraries and dependencies that need to be installed to run this project.
-
-- **`store.csv`**: The original dataset used in this project. It serves as the raw data, which is later processed and transformed.
-
-- **`modify_data.py`**: A Python script responsible for transforming the `store.csv` dataset into a structured and cleaned format, resulting in the `store_data.csv` file.
-
-- **`store_data.csv`**: This file contains the final, processed dataset after transformation, which is used for querying and interaction with the SQL-Chatbot.
-
-- **Database Integration**: The project uses SQLAlchemy to quickly and efficiently import data into a MySQL database.
-
----
-
-## How LLM is Used in the Project
-The SQL-Chatbot utilizes **Large Language Models (LLMs)** to convert user-inputted natural language queries into SQL commands. The LLaMA model is specifically used to understand the context and structure provided in `base_prompt.txt`. When a user enters a query in English, the LLM translates it into a corresponding SQL command that interacts with the database, retrieves the necessary information, and returns results in a user-friendly format.
-
----
-
-## Explore the Project on Hugging Face
-You can explore this project and try out the SQL-Chatbot on Hugging Face: [Hugging Face Project Link](#)
-
----
-
-## How to Clone the Repository
-
-To get started with this project, follow these steps:
+## Installation and Setup
 
 1. Clone the repository:
    ```bash
    git clone <repository_url>
+   cd SQL-Chatbot
+   ```
 
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
+3. Set up environment variables in a `.env` file.
 
-Navigate to the project directory:
+4. Run the Gradio application:
+   ```bash
+   python main.py
+   ```
 
-cd SQL-Chatbot
-Install the required packages:
+## Database Integration
 
-pip install -r requirements.txt
-Run the Gradio application:
+SQL-Chatbot uses SQLAlchemy for database interaction. The `data_to_sql.py` script automates loading `store_data.csv` into a MySQL or PostgreSQL database.
 
-python main.py
+## How to Use SQL-Chatbot
+
+1. Enter a natural language query in the Gradio interface.
+2. The LLaMA model converts the query to SQL.
+3. The SQL query is executed on the database.
+4. Results are displayed in a human-readable format.
+
+## Future Enhancements
+
+- Multi-database support
+- Improved NLP capabilities
+- Query optimization
+
+## How to Contribute
+
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Submit a pull request with a clear explanation of your changes.
+
+## License
+
+[Insert your chosen license here]
+
+## Contact
+
+[Your contact information or project maintainer's contact]
