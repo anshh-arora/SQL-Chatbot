@@ -31,7 +31,7 @@ The SQL-Chatbot leverages **Large Language Models (LLMs)** to convert user input
 
 1. Clone the repository:
    ```bash
-   git clone <repository_url>
+   git clone https://github.com/anshh-arora/SQL-Chatbot.git
    cd SQL-Chatbot
    ```
 
@@ -70,10 +70,10 @@ SQL-Chatbot uses SQLAlchemy for database interaction. The `data_to_sql.py` scrip
 2. Create a new branch for your feature or bug fix.
 3. Submit a pull request with a clear explanation of your changes.
 
-## License
 
-[Insert your chosen license here]
+## Contact Information
+For any questions or feedback, feel free to reach out:
 
-## Contact
-
-[Your contact information or project maintainer's contact]
+- **Email**: [ansharora.cs@gmail.com](mailto:ansharora.cs@gmail.com)
+- **LinkedIn**: [Connect with me on LinkedIn](https://www.linkedin.com/in/ansh-arora-data-scientist/)
+- **Kaggle**: [Follow me on Kaggle](https://www.kaggle.com/ansh1529)
