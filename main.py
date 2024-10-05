@@ -72,7 +72,7 @@ def execute_mysql_query(query):
         connection = mysql.connector.connect(
             host="localhost",
             user="root",
-            password="ansh1529",
+            password="password",
             database="store_data"
         )
         cursor = connection.cursor(dictionary=True)
